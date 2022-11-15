@@ -1,0 +1,153 @@
+/*   <style>
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+</style>
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700
+*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    width: 1440px;
+    height: 720px;
+    background-color: black;
+}
+.container {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+.cards {
+    height: 60%;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border: none;
+}
+.header {
+    padding: 3rem 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.6rem;
+}
+.desc {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 2;
+    opacity: 0.8;
+    margin-bottom: 6rem;
+
+}
+.cards:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+}
+.cards:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+.cards:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.icons {
+    width: 4rem;
+    height: 3rem;
+}
+.buts {
+    width: 10rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 3rem;
+    height: 3.5rem;
+    border: none;
+}
+.cards .but1 {
+    color: hsl(31, 77%, 52%);
+
+}
+.cards .but1:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(31, 77%, 52%);
+    border: 1.5px solid white;
+}
+.cards .but2 {
+    color: hsl(184, 100%, 22%);
+
+}
+.cards .but2:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(184, 100%, 22%);
+    border: 1.5px solid white;
+}
+.cards .but3 {
+    color: hsl(179, 100%, 13%);
+
+}
+.cards .but3:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(179, 100%, 13%);
+    border: 1.5px solid white;
+}
+@media only screen and (max-width: 450px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+        display: block;
+    }
+    body {
+        width: 450px;
+        height: 720px;
+        background-color: black;
+    }
+    .cards {
+        height: 60%;
+        width: 80%;
+        display: block;
+        margin-left: 25px;
+    }
+}
